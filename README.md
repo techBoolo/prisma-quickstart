@@ -44,3 +44,6 @@ we can execute any CRUD operation,
 
 see the typescript file `script.ts`
 
+```
+  npx ts-node script.ts
+```

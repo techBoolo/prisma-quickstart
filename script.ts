@@ -10,6 +10,14 @@ const newUser = {
 
 async function main() {
   // create a user (C)
+//  const result = await prisma.user.create({
+//    data: {
+//      name: 'alice',
+//      email: 'alice@prisma.io'
+//    }
+//  })
+
+  // create a user (C)
 //  const result = await prisma.user.create({ 
 //    data: {
 //      name: 'joe',
@@ -27,13 +35,6 @@ async function main() {
 //   }
 // })
 
-  // create a user (C)
-//  const result = await prisma.user.create({
-//    data: {
-//      name: 'alice',
-//      email: 'alice@prisma.io'
-//    }
-//  })
 
   // create multiple users (C)
   // not supported in sqlite
@@ -44,6 +45,7 @@ async function main() {
 //      { name: 'tname', email: 'tname@email.com' }
 //    ]
 //  })  
+
   //  fetch all users(R)
   const result = await prisma.user.findMany({
       include: {
